@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./persecmap.component.css']
 })
 export class PersecmapComponent implements OnInit {
-
+  YOUR_API_KEY:string ="AIzaSyDeexU6v72IvsZqLsCFaFQuogP3PTCByRY"
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
 }
