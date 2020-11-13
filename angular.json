@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "persecMap"
+    }
+  },
+  "defaultProject": "persecMap",
+  "cli": {
+    "analytics": "17842685-394d-40dc-9575-590cd3f58a8f"
+  }
 }
