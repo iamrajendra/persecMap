@@ -7,6 +7,10 @@ import { FooterComponent } from './footer/footer.component';
 import { PersecmapComponent } from './persecmap/persecmap.component';
 import { PersecListComponent } from './persec-list/persec-list.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,9 +20,12 @@ import { PersecListComponent } from './persec-list/persec-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
