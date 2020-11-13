@@ -1,1 +1,7 @@
-<p>persec-list works!</p>
+<h3><p>Location on List</h3>
+<li *ngFor="let location of locations">
+    <a routerLink="/detail/{{location.id }}">
+    {{location.name}}
+    </a>
+    
+  </li>
